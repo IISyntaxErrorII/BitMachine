@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container-el{
+    background-color: rgba(128, 128, 128, 0.479);
+    border-radius: 20px;
+    border: solid 6px black;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+#display{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    color:hsla(0, 0%, 25%); 
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 2rem;
+    max-height: 60vh;
+}
+#menu{
+    display: block;
+    text-align: center;
+}
+#continueContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 20px;
+}
+h2 #first-dot{
+    display: inline-block;
+    animation-name: firstDot;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+h2 #second-dot{
+    display: inline-block;
+    animation-name: secondDot;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+h2 #third-dot{
+    display: inline-block;
+    animation-name: thirdDot;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes firstDot {
+    0%{
+        transform: translateY(-0%);
+    }
+    50%{
+        transform: translateY(-22px)
+    }
+    100%{
+        transform:translateY(0%) ;
+    }
+}
+@keyframes secondDot {
+    0%{
+        transform: translateY(-0%);
+    }
+    50%{
+        transform: translateY(-22px)
+    }
+    100%{
+        transform:translateY(0%) ;
+    }
+}
+@keyframes thirdDot {
+    0%{
+        transform: translateY(-0%);
+    }
+    50%{
+        transform: translateY(-22px)
+    }
+    100%{
+        transform:translateY(0%) ;
+    }
+}
+input{
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color:rgba(128, 128, 128, 0.479);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+input:hover{
+    cursor: auto;
+}
+#continue{
+    display: none;
+    color: black;
+    border: 4px black solid;
+    box-shadow: 0 0 0;
+    font-family: "DotGothic16", sans-serif;
+    margin-top: 20px;
+}
+#result{
+    display: none;
+    text-align: center;
+}
+#selector{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 12px;
+}
+button{
+    border: solid 4px hsla(0, 0%, 50%);
+    margin: 1px;
+    font-size: 3rem;
+    box-shadow: 2px 2px 5px;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+button:hover{
+    background-color: hsla(0, 0%, 65%, 0.479);
+    cursor: pointer;
+}
+button:active{
+    border: solid 4px hsla(0, 0%, 65%);
+    transform: scale(1.01);
+}
+#goBack{
+    color: black;
+    border: 4px black solid;
+    box-shadow: 0 0 0;
+    font-family: "DotGothic16", sans-serif;
+    margin-top: 20px;
+}
